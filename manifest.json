@@ -1,0 +1,19 @@
+{
+  "name": "Tab to Search",
+  "description": "Type ` (upper left key) followed by a search term to search websites, from your address bar. Made by Alexander Fou",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "Alexander Fou",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "omnibox": { "keyword": "`" },
+  "action": {
+    "default_icon": {
+      "16": "tab.png"
+    }
+  },
+  "icons": {
+    "16": "tab.png"
+  }
+}

@@ -1,2 +1,1 @@
-# tab-to-search
-Adds the tab to search functionality as a chromium extension.
+Tab icon made by Pixel Perfect from www.flaticon.com
