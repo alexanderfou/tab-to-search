@@ -7,6 +7,7 @@ Quick extension made to add the tab to search functionality to chromium based br
 and the web
 ---
 Installation Guide
+---
 
 Download the .crx file
 
@@ -19,6 +20,7 @@ unzip the file
 go back to the extensions page and click **load unpacked extension** and select the unzipped folder
 
 ---
+
 This extension was written for personal use but I am releasing it so that anyone can use it and improve on it if they wish. As such, I cannot guarantee performance nor updates to this extension.
 
 Tab icon made by Pixel Perfect from www.flaticon.com
