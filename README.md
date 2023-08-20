@@ -1,4 +1,4 @@
-Quick extension made to add the tab to search functionality to chromium based browsers. To use, press the [grave key](https://www.peachpit.com/articles/article.aspx?p=1966667), tab, and then type in what you want to search: for example, if you want to find a video on YouTube, start typing "youtube" and the extension will detect it. Once you are searching the website you want, press the grave key again and enter your search query. Press enter to complete. Currently supports the following websites:
+Quick extension made to add the tab to search functionality to chromium based browsers. To use, press the [grave key `](https://www.techspot.com/trivia/13-where-gravetilde-key-standard-usuk-qwerty-keyboard/), tab, and then type in what you want to search: for example, if you want to find a video on YouTube, start typing "youtube" and the extension will detect it. Once you are searching the website you want, press the grave key again and enter your search query. Press enter to complete. Currently supports the following websites:
 - YouTube
 - X (twitter)
 - Twitch
