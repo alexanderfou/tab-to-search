@@ -1,6 +1,6 @@
 let lock = false;
 let index = 0;
-//0 = default search, 1 = YouTube, 2 = Twitch, 3 = Gmail, 4 = StackOverflow, can add more? //TODO
+//0 = default search, 1 = YouTube, 2 = Twitch, 3 = Gmail, 4 = StackOverflow, 5 = google drive, can add more? //TODO
 //when adding a new website, make sure to: change generateSuggestions() if statement, the switch statement, and the switch statement in onInputEntered()
 chrome.omnibox.onInputStarted.addListener(function(text, suggest) {
   chrome.omnibox.setDefaultSuggestion({description: "Search the Web"});
@@ -38,6 +38,10 @@ function generateSuggestions(text, lock) {
       suggestions = {description: "Search StackOverflow"};
       index = 4;
     }
+    else if ("drive".includes(text)) {
+      suggestions = {description: "Search Google Drive"};
+      index = 5;
+    }
     else {
       suggestions = {description: "Search the Web"};
       index = 0;
@@ -54,6 +58,8 @@ function generateSuggestions(text, lock) {
         suggestions = {description: "Searching Gmail"}; break;
       case 4:
         suggestions = {description: "Searching StackOverflow"}; break;
+      case 5:
+        suggestions = {description: "Searching Google Drive"}; break;
       default:
         suggestions = {description: "Searching the Web"}; break;
     }
@@ -77,6 +83,8 @@ chrome.omnibox.onInputEntered.addListener((text) => {
       newURL = 'https://mail.google.com/mail/u/0/#search/'; break;
     case 4:
       newURL = 'https://stackoverflow.com/search?q='; break;
+    case 5:
+      newURL = 'https://drive.google.com/drive/search?q='; break;
     default:
       newURL = 'https://www.google.com/search?q='; break;
   }
