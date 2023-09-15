@@ -4,6 +4,7 @@ Quick extension made to add the tab to search functionality to chromium based br
 - Twitch
 - Gmail
 - Stack Overflow
+- Google Drive
 and the web
 ---
 Installation Guide
